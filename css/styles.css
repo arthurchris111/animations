@@ -1,0 +1,64 @@
+
+body{
+    background: rgb(179,242,239);
+    background: linear-gradient(90deg, rgba(179,242,239,1) 0%, rgba(139,187,226,1) 48%, rgba(246,209,247,1) 100%);
+}
+
+
+.square{
+    height: 50px;
+    width: 30%;
+    background-color: aqua;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.square{
+    animation-name: div-color;
+    animation-duration: 5s;
+}
+
+@keyframes div-color{
+    0%{background-color: aqua; left: 0px; top: 0px;}
+    25%{background-color: yellow; left:300px ; top: 0px;}
+    50%{background-color: brown; left: 300px; top: 300px;}
+    75%{background-color: red; left: 0px; top: 300px;}
+    100%{background-color: hotpink; left: 0px; top: 0px;}
+
+}
+
+
+.submit{
+    width: 10%;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-size: large;
+    box-shadow: 10px 10px 10px 0px rgb(201, 196, 196);
+    padding: 10px;
+}
+
+.submit:hover{
+    animation-name: colorful;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes colorful{
+     100%{background-color: brown;}
+ }
+ 
+ .ball{
+     background: linear-gradient(  35deg, #ccffff, #ffcccc);
+     height: 100px;
+     width: 100px;
+     margin-top: 40px;
+     margin-left: 30%;
+     border: none;
+     border-radius: 50%;
+     
+ }
